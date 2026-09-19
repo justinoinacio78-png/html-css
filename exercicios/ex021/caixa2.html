@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags em HTML</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: cadetblue;
+            margin: auto;
+        }
+        header{
+            background: white;
+            padding: 1px 0px 10px 0px;
+            margin: 20px 10px 10px 10px;
+        }
+        header > h1{
+            color: rgb(139, 135, 76);
+            text-align: center;
+            font-size: 3em;
+        }
+        nav{
+            background-color: rgb(1, 66, 68);
+            padding: 5px;
+        }
+        a{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-decoration: none;
+            padding-right: 8px;
+            color: rgb(180, 38, 28);
+            font-weight: bold;
+        }
+        header > nav > a:hover{
+            color: darkred;
+            text-decoration: underline;
+            font-size: 1.2em;
+            font-family: cursive;
+        }
+        main{
+            background: rgb(245, 240, 233);
+            text-align: justify;
+        }
+        #proprio{
+            margin: 10px;
+        }
+        #citacao{
+            background-color: rgb(247, 176, 150);
+            padding: 10px;
+            margin: 10px;
+        }
+        h2{
+            color: blue;
+        }
+        article{
+            font-family: cursive;
+            font-size: 0.8em;
+            color: rgb(163, 3, 35);
+            border: solid;
+            border-color: brown;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        article > h3{
+            text-align: right;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+            margin: 0%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="proprio">
+            <h2>Aprendendo sobre Grouping Tags em HTML</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolor, praesentium omnis minus quibusdam molestiae, possimus aspernatur a inventore ut veniam quo voluptatum incidunt iste quae numquam dolore accusantium id.</p>
+        </section>
+        <section id="citacao">
+            <h2>Tags Semanticas</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsum eos aliquid sequi pariatur ipsam, soluta nam iure, dignissimos maxime non temporibus aut nobis vel praesentium eveniet, velit deleniti! Consequatur.</p>
+            <article>
+                <h3>O que são tags semanticas em HTML?</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quis minima mollitia, adipisci ullam, blanditiis quaerat vel nesciunt beatae voluptas cupiditate, ducimus aperiam quidem modi quae? Pariatur voluptatibus quos accusantium?</p>
+            </article>
+        </section>
+        <footer>
+            <p>Desenvolvido por Justino Inácio</p>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        a:visited{
+            color: rgb(255, 8, 0);
+        }
+
+        a:hover{
+            color: darkred;
+            text-decoration: underline;
+        }
+
+        .especial::after{
+            content: ' [link]';
+            color: rgb(173, 92, 92);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="###">Repositório do GitHub</a></li>
+        <li><a href="###" class="especial">Canal do YouTube</a></li>
+        <li><a href="###">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

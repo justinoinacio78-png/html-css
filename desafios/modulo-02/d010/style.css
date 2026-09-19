@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+body{
+    background: rgb(164, 240, 215);
+    font-family: 'Courier New', Courier, monospace;
+}
+header{
+    background-color: rgb(25, 143, 25);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: -8px;
+    box-shadow: 2px 2px 2px rgb(187, 187, 187);
+}
+header > nav{
+    text-align: left;
+}
+
+header > nav > a{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    margin-right: 10px;
+}
+a:hover{
+    color: aqua;
+}
+main{
+    background-color: white;
+    padding: 10px 15px;
+    margin: 8px 100px;
+    box-shadow: 2px 2px 2px rgb(187, 187, 187);
+    border: 1px solid transparent;
+    border-radius: 0px 0px 5px 5px;
+}
+#conteudo > h1{
+    color: green;
+}
+#conteudo > h2{
+    background-color: rgb(194, 243, 194);
+    color: green;
+}
+.foto{
+    text-align: center;
+}
+article{
+    background: rgb(164, 240, 215);
+    text-indent: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 2px 2px 2px rgb(187, 187, 187);
+}
+article > h1{
+    background-color: rgb(36, 168, 36);
+    color: white;
+    font-size: 1.5em;
+    margin: -1px;
+    border-radius: 5px 5px 0px 0px;
+}
+footer{
+    background-color: green;
+    color: white;
+    text-align: center;
+    margin-left: -8px;
+    margin-right: -8px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.js" method="post">
+        <p>
+           
+            <label for="ipro">Províncias:</label>
+            <select name="pro" id="ipro">
+            <option value="" selected>--Escolha-- </option>
+                <option value="BG">Benguela</option>
+                <option value="LD">Luanda</option>
+                <option value="HU">Huíla</option>
+                <option value="HA">Huambo</option>
+                <option value="CS">Cuanza Sul</option>
+            </select>
+        </p>
+        
+        <p>
+            <label for="iprof">Profissões:</label>
+            <input type="text" name="prof" id="iprof" list="lista">
+            <datalist id="lista">
+                <option>Professor</option>
+                <option>Contabilista</option>
+                <option>Enginheiro</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p><label for="imsg">Mensagem</label><br>
+            <textarea name="imsg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* Todas outras Medias Queries 
+
+TYPICAL DEVICE BREAKPOINT
+-------------------------
+Pequenas telas: até 600px
+Telemóvel: de 600px até 768
+Tablet: de 768px até 992px
+Descktop: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media print {
+    main{
+        width: 90vw;
+        border: 1px solid black;
+        text-align: right;
+        font-size: .7em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h1{
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2em;
+        text-align: center;
+    }
+    main::after{
+        content: 'Essa impressão foi feita atraves do site www.atnr.com';
+        text-decoration: overline;
+    }
+    
+     #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: block; margin: auto;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url('../imgens/back-tablet.jpg');
+    }
+
+    #phone{display: none;}
+    #tablet{display: block; margin: auto;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-Width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url('../imgens/back-pc.jpg');
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: block; margin: auto;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url('../imgens/back-tv.jpg');
+    }
+
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: block; margin: auto;}
+}

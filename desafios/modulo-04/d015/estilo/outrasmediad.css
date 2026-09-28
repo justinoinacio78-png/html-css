@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/*
+Pequenas telas: max-widt 600px
+Mobile: de 600px a 768px
+Tablet: de 768px a 992px
+PC: de 992px a 1200px
+Grandes telas: min-width 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    main{
+        background-image: linear-gradient(to bottom, blueviolet, cadetblue);
+    }
+    
+    section{
+        width: 80vw;
+        height: 45vh;
+    }
+
+   div#foto{
+    float: left;
+    height: 300px;
+    width: 30%;
+    height: 100%;
+    border-top-right-radius: 0px;
+    }
+
+    div#login{
+        float: right;
+        width: 68%;
+        height: 100vh;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+     main{
+        background-image: linear-gradient(to bottom, blueviolet, cadetblue);
+    }
+    
+    section{
+        width: 67vw;
+        height: 50vh;
+        font-size: 1.2em;
+    }
+
+   div#foto{
+    float: right;
+    height: 300px;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 0px;
+    }
+
+    div#login{
+        float: left;
+        width: 50%;
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+     main{
+        background-image: linear-gradient(to bottom, blueviolet, cadetblue);
+    }
+    
+    section{
+        width: 70vw;
+        height: 50vh;
+        font-size: 1.2em;
+    }
+
+   div#foto{
+    float: right;
+    height: 300px;
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 0px;
+    }
+
+    div#login{
+        float: left;
+        width: 40%;
+        height: 100vh;
+    }
+}

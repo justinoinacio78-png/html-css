@@ -16,7 +16,13 @@ header, section.normal{
     padding: 20px;
 }
 
-h1, h2, p{
+h1, h2{
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+p{
     margin-bottom: 10px;
     text-align: justify;
 }
@@ -24,4 +30,41 @@ h1, h2, p{
 section.flex-content{
     background-color: rgb(192, 192, 192);
     padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article > div.text{
+    flex: 1 1 500px;
+}
+
+article > div.media{
+    flex: 1 0 400px;
+}
+
+div.media > img{
+    display: block;
+    margin: auto;
+    width: 350px;
+    margin-bottom: 10px;
+}
+
+div.media > video{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    margin-top: 10px;
 }
